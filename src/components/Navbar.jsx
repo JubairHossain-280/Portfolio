@@ -29,7 +29,7 @@ const Navbar = () => {
     },
   ]
   return (
-    <nav className='backdrop-blur-2xl w-full  px-8 z-10 text-white bg-black  sticky top-0 md:fixed md:bg-black/30'>
+    <nav className='backdrop-blur-2xl w-full  px-8 z-10 text-white bg-black  fixed top-0 md:bg-black/30'>
         <div className='container mx-auto flex justify-between items-center h-20'>
         <div className="logo z-10">
           <h1 className='font-signature text-white text-5xl'>Jubair</h1>
