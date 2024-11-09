@@ -15,10 +15,10 @@ const Home = () => {
             <p className='text-gray-500 py-4 max-w-md'>with a focus on building user-friendly, responsive interfaces using HTML, CSS, and JavaScript. I enjoy creating visually engaging, interactive experiences that work seamlessly across devices and browsers.
             </p>
             <div className='flex justify-start'>
-                <Link to='portfolio' smooth duration={500} className='group text-white font-semibold cursor-pointer w-fit px-6 py-3 flex justify-center  rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 md:my-2'>
+                <Link to='portfolio' smooth duration={500} className='group text-white font-semibold cursor-pointer w-fit px-4 py-2 flex justify-center  rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 md:my-2 md:px-6 md:py-3'>
                     Portfolio
                     <span className='group-hover:rotate-90 duration-300'>
-                        <MdOutlineKeyboardArrowRight size={25} className='ml-1'/>
+                        <MdOutlineKeyboardArrowRight size={25} className='md:ml-1'/>
                         </span>
                 </Link>
             </div>
