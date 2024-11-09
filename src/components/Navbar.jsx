@@ -55,7 +55,7 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile Menu Btn */}
-        <div onClick={() => setNav(!nav)} className='cursor-pointer text-gray-500 z-10 md:hidden'>
+        <div onClick={() => setNav(!nav)} className='cursor-pointer text-gray-500 z-10 md:hidden' data-aos='zoom-in'>
           {nav ? <FaXmark size={25} /> : <FaBars size={25}/>}
         </div>
 
