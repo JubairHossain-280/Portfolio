@@ -72,7 +72,7 @@ const Experience = () => {
           <p className='py-6 md:text-xl'>These are the technologies I've worked with</p>
         </div>
 
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-4 px-12 sm:px-0 md:gap-8'>
+        <div className='grid grid-cols-2 md:grid-cols-3 gap-8 sm:px-0 md:gap-8'>
 
           {experiences.map(({id, src, child, style}) => (
 

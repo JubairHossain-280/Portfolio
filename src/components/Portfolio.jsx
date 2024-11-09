@@ -44,7 +44,7 @@ const Portfolio = () => {
           <p className='py-6 md:text-xl'>Check out some of my work right here</p>
         </div>
 
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:px-0'>
 
           {portfolios.map(({id, src}) => (
 
