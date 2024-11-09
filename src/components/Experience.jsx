@@ -72,12 +72,12 @@ const Experience = () => {
           <p className='py-6 md:text-xl'>These are the technologies I've worked with</p>
         </div>
 
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-8 sm:px-0 md:gap-8'>
+        <div className='grid grid-cols-2 md:grid-cols-3 gap-8 sm:px-12 md:px-0'>
 
           {experiences.map(({id, src, child, style}) => (
 
-          <div key={id} className={`flex flex-col justify-center items-center sm:py-3 shadow-md rounded-lg overflow-hidden duration-500 hover:-translate-y-3 ${style}`}>
-            <img src={src} alt="" className='w-full h-1/2 sm:h-full md:w-1/2 rounded-md '/>
+          <div key={id} className={`flex flex-col justify-center items-center py-0 md:py-3 shadow-md rounded-lg overflow-hidden duration-500 hover:-translate-y-3 ${style}`}>
+            <img src={src} alt="" className='w-full sm:w-3/4 md:w-1/2 h-1/2 sm:h-3/4 md:h-full rounded-md '/>
             <div>
                 <p className='font-bold'>{child}</p>
             </div>
