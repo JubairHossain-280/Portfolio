@@ -29,10 +29,10 @@ const Navbar = () => {
     },
   ]
   return (
-    <nav className='backdrop-blur-2xl w-full  px-8 z-10 text-white bg-black  fixed top-0 md:fixed md:bg-black/30'>
-        <div className='container mx-auto flex justify-between items-center h-20'>
+    <nav className='backdrop-blur-2xl w-full  px-8 z-10 text-white bg-black/30 fixed top-0 md:fixed'>
+        <div className='container mx-auto flex justify-between items-center h-16 md:h-20'>
         <div className="logo z-10">
-          <h1 className='font-signature text-white text-5xl'>Jubair</h1>
+          <h1 className='font-signature text-white text-4xl md:text-5xl'>Jubair</h1>
         </div>
         <ul className='hidden md:flex gap-12'>
             {links.map(({id , link}) => (
@@ -44,7 +44,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Btn */}
         <div onClick={() => setNav(!nav)} className='cursor-pointer text-gray-500 z-10 md:hidden'>
-          {nav ? <FaXmark size={30}/> : <FaBars size={30}/>}
+          {nav ? <FaXmark size={25} /> : <FaBars size={25}/>}
         </div>
 
         {/* Mobile Navigation Links */}
