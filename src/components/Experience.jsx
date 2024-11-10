@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 import HTML5 from '../assets/icons8-html5 (3).svg'
 import CSS3 from '../assets/icons8-css3.svg'
 import JS from '../assets/icons8-js.svg'
@@ -9,6 +11,11 @@ import Figma from '../assets/icons8-figma.svg'
 import GitHub from '../assets/icons8-github (1).svg'
 
 const Experience = () => {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+})
 
     const experiences = [
         {
@@ -67,12 +74,14 @@ const Experience = () => {
   return (
     <div name='experience' className='w-full h-full bg-gradient-to-b from-gray-800 to-black text-white pt-20'>
         <div className='max-w-screen-lg mx-auto flex flex-col justify-center w-11/12 h-full '>
-        <div className='pb-8 '>
+        <div className='pb-8 ' data-aos='fade-down' data-aos-easing='ease-in-out'
+     data-aos-duration="1200">
           <p className='text-3xl font-bold inline border-b-4 border-gray-500 md:text-5xl'>Experience</p>
           <p className='py-6 md:text-xl'>These are the technologies I've worked with</p>
         </div>
 
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-8 sm:px-12 md:px-0'>
+        <div className='grid grid-cols-2 md:grid-cols-3 gap-8 sm:px-12 md:px-0' data-aos='fade-up' data-aos-easing='ease-in-out'
+     data-aos-duration="1200">
 
           {experiences.map(({id, src, child, style}) => (
 

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos'
+import 'aos/dist/aos.css';
 import { FaGithub, FaLinkedin } from 'react-icons/fa6'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
@@ -7,10 +8,7 @@ import { BsFillPersonLinesFill } from 'react-icons/bs'
 const SocialLinks = () => {
 
     useEffect(() => {
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-        });
+        AOS.init();
         AOS.refresh();
     })
 
@@ -46,7 +44,8 @@ const SocialLinks = () => {
 
 
   return (
-    <div className='hidden lg:flex flex-col top-[35%] left-0 fixed z-10' data-aos='fade-right'>
+    <div className='hidden lg:flex flex-col top-[35%] left-0 fixed z-10' data-aos='fade-right' data-aos-easing='ease-in-out'
+    data-aos-duration="1200">
         <ul>
 
             {socialLinks.map(({id, child, href, download, style, target}) => (

@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 import Portfolio1 from '../assets/Portfolio1.jpeg'
 import Portfolio2 from '../assets/Portfolio2.jpeg'
 import Portfolio3 from '../assets/Portfolio3.png'
@@ -7,7 +9,13 @@ import Portfolio5 from '../assets/Portfolio5.jpeg'
 import Portfolio6 from '../assets/Portfolio6.jpeg'
 
 const Portfolio = () => {
-  
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+})
+
+
   const portfolios = [
     {
       id: 1,
@@ -39,12 +47,14 @@ const Portfolio = () => {
   return (
     <div name='portfolio' className='bg-gradient-to-b from-black to-gray-800 w-full text-white h-full'>
       <div className='max-w-screen-lg mx-auto flex flex-col justify-center w-11/12 h-full pt-20'>
-        <div className='pb-8 '>
+        <div className='pb-8 ' data-aos='fade-down' data-aos-offset='0' data-aos-easing='ease-in-out'
+     data-aos-duration="1200">
           <p className='text-3xl font-bold inline border-b-4 border-gray-500 md:text-5xl'>Portfolio</p>
           <p className='py-6 md:text-xl'>Check out some of my work right here</p>
         </div>
 
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:px-12 md:px-0'>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:px-12 md:px-0' data-aos='fade-up' data-aos-easing='ease-in-out'
+     data-aos-duration="1200">
 
           {portfolios.map(({id, src}) => (
 
