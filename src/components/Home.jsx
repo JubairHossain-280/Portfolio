@@ -19,7 +19,7 @@ const Home = () => {
        <div className='max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full md:flex-row w-11/12'>
         <div className='flex flex-col justify-center mb-8 mx-auto md:mb-0' data-aos='fade-down' data-aos-easing='ease-in-out'
      data-aos-duration="1200">
-            <h2 className='text-4xl md:text-5xl lg:text-7xl font-bold text-white'>
+            <h2 className='text-4xl md:text-5xl lg:text-7xl font-bold text-white'>  
                 I'm a Front-End Developer
             </h2>
             <p className='text-gray-500 py-4 max-w-md'>with a focus on building user-friendly, responsive interfaces using HTML, CSS, and JavaScript. I enjoy creating visually engaging, interactive experiences that work seamlessly across devices and browsers.

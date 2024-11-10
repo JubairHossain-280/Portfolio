@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className='container mx-auto flex justify-between items-center h-16 md:h-20'>
         <div className="logo z-10">
           <h1 className='font-signature text-white text-4xl md:text-5xl' data-aos='zoom-in' data-aos-easing='ease-in-out'
-     data-aos-duration="1500">Jubair</h1>
+     data-aos-duration="1200">Jubair</h1>
         </div>
         <ul className='hidden md:flex gap-12'>
             {links.map(({id , link}) => (
