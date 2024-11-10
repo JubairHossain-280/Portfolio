@@ -7,7 +7,7 @@ import { Link } from 'react-scroll';
 
 const Home = () => {
 
-    useEffect(() => {
+    useEffect(() => {   
         AOS.init({
             duration: 800,
             easing: 'ease-in-out',
