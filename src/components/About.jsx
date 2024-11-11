@@ -24,7 +24,7 @@ const About = () => {
 
           <br />
 
-          <p className='md:text-xl'>I am a CSE student at National Polytechnic Collage. My dream is to be a Software Engineer. So, i'm continuously learning new technologies . I like programming and software development. I've expertise in programming languages like JavaScript, Python, Java etc.</p>
+          <p className='md:text-xl'>I am a CSE student at National Polytechnic Collage. My dream is to be a Software Engineer. So, i'm continuously learning new technologies . I love programming and software development. I've expertise in programming languages like JavaScript, Python, Java etc.</p>
         </div>
       </div>
     </div>
