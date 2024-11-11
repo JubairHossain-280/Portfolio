@@ -46,9 +46,12 @@ const Navbar = () => {
         </div>
         <ul className='hidden md:flex gap-12'>
             {links.map(({id , link}) => (
-            <li key={id} className='cursor-pointer text-gray-500 capitalize font-medium hover:scale-105 hover:text-white duration-200' data-aos='fade-right' data-aos-easing='ease-in-out'
+            <li key={id} className='group cursor-pointer text-gray-500 capitalize font-medium relative pb-0.5 transition-all hover:text-white duration-200' data-aos='fade-right' data-aos-easing='ease-in-out'
             data-aos-duration="1200">
-                <Link to={link} smooth duration={500}>{link}</Link>
+                <Link to={link} smooth duration={500}>
+                {link}
+                <span className='absolute bottom-0 left-0 w-full scale-x-0 h-0.5 bg-gray-500 origin-bottom-right transition-transform duration-300 ease-in-out group-hover:scale-x-100 group-hover:origin-bottom-left '></span>
+                </Link>
             </li>
             ))}
         </ul>
