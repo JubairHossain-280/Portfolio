@@ -16,7 +16,7 @@ const SocialLinks = () => {
         {
             id: 1,
             child: <>Linkedin <FaLinkedin size={30}/></>,
-            href: 'https://www.linkedin.com',
+            href: 'https://www.linkedin.com/in/jubair-hossain-805550341/',
             target: '_blank',
             style: 'rounded-tr-md',
         },
