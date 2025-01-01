@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
-import HeroImage from '../assets/hero-img.png'
+import HeroImage from '../assets/my_pic1.png'
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { BsMouse } from "react-icons/bs";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import { Link } from 'react-scroll';
 
 
@@ -36,8 +38,12 @@ const Home = () => {
             </div>
         </div>
         <div>
-            <img src={HeroImage} alt="Profile-img" className='rounded-2xl w-4/5 mx-auto md:w-full'/>
+            <img src={HeroImage} alt="Profile-img" className='animate-pulse w-3/6 mx-auto md:w-full shadow-2xl shadow-teal-500 transition-all duration-300 ease-in-out' style={{width:'500px',height:'380px', borderRadius:'50%',objectFit: 'contain'}}/>
         </div>
+        <div className='flex justify-center items-center rounded-full border-dashed border-2 border-gray-500 w-20 h-20 md:absolute md:bottom-12'>
+            <BsMouse size={35} className='text-white rotate-180'/>
+        </div>
+        <MdKeyboardDoubleArrowDown size={35} className='text-white md:absolute md:bottom-5 animate-bounce'/>
        </div>
     </div>
   )
