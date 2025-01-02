@@ -40,10 +40,12 @@ const Home = () => {
         <div>
             <img src={HeroImage} alt="Profile-img" className='animate-pulse w-3/6 mx-auto md:w-full shadow-2xl shadow-teal-500 transition-all duration-300 ease-in-out' style={{width:'500px',height:'380px', borderRadius:'50%',objectFit: 'contain'}}/>
         </div>
-        <div className='flex justify-center items-center rounded-full border-dashed border-2 border-gray-500 w-20 h-20 md:absolute md:bottom-12'>
-            <BsMouse size={35} className='text-white rotate-180'/>
-        </div>
-        <MdKeyboardDoubleArrowDown size={35} className='text-white md:absolute md:bottom-5 animate-bounce'/>
+        <Link to='about' smooth duration={500} className='hidden flex-col justify-center items-center cursor-pointer absolute bottom-12 lg:flex'>
+            <div className='flex justify-center items-center rounded-full border-dashed border-2 border-gray-500 w-20 h-20'>
+                <BsMouse size={35} className='text-white rotate-180'/>
+            </div>
+            <MdKeyboardDoubleArrowDown size={35} className='text-white absolute -bottom-1/2 animate-bounce'/>
+        </Link>
        </div>
     </div>
   )
