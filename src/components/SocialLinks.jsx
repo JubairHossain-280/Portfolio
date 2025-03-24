@@ -35,7 +35,7 @@ const SocialLinks = () => {
         {
             id: 4,
             child: <>Resume <BsFillPersonLinesFill size={30}/></>,
-            href: '/CV of Jubair Hossain Shakib.pdf',
+            href: '/CV.pdf',
             download: true,
             style: 'rounded-br-md',
         }
