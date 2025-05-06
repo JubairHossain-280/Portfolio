@@ -22,7 +22,7 @@ const Contact = () => {
 
             <div className='flex justify-center items-center' data-aos='fade-up' data-aos-easing='ease-in-out'
      data-aos-duration="1200">
-                <form action="https://getform.io/f/ajjjmxya" method='POST' className='flex flex-col w-full md:w-1/2'>
+                <form action="https://getform.io/f/adrnerra" method='POST' className='flex flex-col w-full md:w-1/2'>
                     <input type="text" name='name' placeholder='Enter your name' required className='p-2 bg-transparent border-2 rounded-md focus:outline-none text-white'/>
                     <input type="email" name='email' placeholder='Enter your email' required className='my-4 p-2 bg-transparent border-2 rounded-md focus:outline-none text-white'/>
                     <textarea name="message" id="" rows='7' placeholder='Enter your message...' className='resize-none p-2 bg-transparent border-2 rounded-md focus:outline-none text-white'></textarea>
